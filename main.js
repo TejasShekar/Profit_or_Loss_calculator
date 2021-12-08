@@ -30,7 +30,14 @@ function clickHandler() {
   var i = Number(initialPrice.value);
   var q = Number(stocksQuantity.value);
   var c = Number(currentPrice.value);
-
-  calcProfitAndLoss(i, q, c);
+  if((i && q && c) > 0){
+    calcProfitAndLoss(i, q, c);
+  }else if((i && q && c) === 0){
+    output.innerText = `Zero ? You serious? 😂`;
+  }
+  else{
+    output.innerText = `In what universe do they use negative values for the above fields ? 😂`;
+  }
+  
 }
 checkBtn.addEventListener("click", clickHandler);
