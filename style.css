@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(161, 97, 245);
   font-family: "Fuzzy Bubbles", cursive;
 }
 
@@ -12,7 +11,8 @@ h1{
   text-align: center;
   margin: 2rem auto;
   padding-top: 3rem;
-  color: rgb(128, 255, 0);
+  color: rgb(161, 97, 245);
+  font-size: 3rem;
 }
 
 /*page specific css from here*/
@@ -29,7 +29,7 @@ label {
 #check-btn {
   font-size: large;
   display: block;
-  margin: auto;
+  margin: 3rem auto;
   padding: 0.2rem 1rem;
   border-radius: 1rem;
   border-color: coral;
@@ -43,6 +43,7 @@ label {
 }
 
 input {
+  margin: 0.5rem auto;
   text-align: center;
   border-radius: 1rem;
   font-size: large;
@@ -51,7 +52,6 @@ input {
 
 footer {
   text-align: center;
-  padding-top: 2rem;
   font-weight: bold;
 }
 
