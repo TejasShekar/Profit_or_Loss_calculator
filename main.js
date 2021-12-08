@@ -30,9 +30,9 @@ function clickHandler() {
   var i = Number(initialPrice.value);
   var q = Number(stocksQuantity.value);
   var c = Number(currentPrice.value);
-  if((i && q && c) > 0){
+  if(i > 0 && q > 0 && c > 0){
     calcProfitAndLoss(i, q, c);
-  }else if((i && q && c) === 0){
+  }else if(i === 0 && q === 0 && c === 0){
     output.innerText = `Zero ? You serious? 😂`;
   }
   else{
