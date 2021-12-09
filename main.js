@@ -32,7 +32,7 @@ function clickHandler() {
   var c = Number(currentPrice.value);
   if(i > 0 && q > 0 && c > 0){
     calcProfitAndLoss(i, q, c);
-  }else if(i === 0 && q === 0 && c === 0){
+  }else if(i === 0 || q === 0 || c === 0){
     output.innerText = `Zero ? You serious? 😂`;
   }
   else{
